@@ -55,10 +55,11 @@ void input_and_setup() {
 
 }
 
+int main()
+{
+	input_and_setup();
 
-int main(){
-input_and_setup();
-printf("\n\nProcess\t|Turnaround Time|Waiting Time\n\n");
+	printf("\n\nProcess\t|Turnaround Time|Waiting Time\n\n");
 	for (i = 0; i < totpro; i++)
 	{
 		x = i;
@@ -157,5 +158,6 @@ printf("\n\nProcess\t|Turnaround Time|Waiting Time\n\n");
 		else
 			countn++;
 	}
-
+	printf("\n Average Waiting Time= %f\n", wait_time / n);
+	printf("Avg Turnaround Time = %f", turnt / n);
 }
